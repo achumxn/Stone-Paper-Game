@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #1e1e1e;
+}
+
+.game-container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-container p {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.players {
+    width: 95%;
+    height: min-content;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px #dcdcdc;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container h3 {
+    font-size: 30px;
+}
+
+.card {
+    width: 25%;
+    height: 150px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px #dcdcdc;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #4e91fc88;
+    transform: scale(1.05);
+}
+
+.actions-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.button {
+    background: linear-gradient(to right, rgb(7, 216, 7), rgb(70, 196, 242));
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #4e91fc88;
+    transform: scale(1.05);
+}
+
+.icon.selected {
+    border: 2px solid #00796b;
+}
+
+.icon.dimmed {
+    opacity: 0.3;
+}
+
+.score-reset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    background-color: #35b6e5;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: rgb(0, 81, 255);
+}
